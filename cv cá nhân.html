@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Chuyên Nghiệp - Nguyen Trung Anh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6;
+            padding: 30px; }
+        .cv-container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            box-shadow: 0 15px 30px rgba(0, 51, 102, 0.1); }
+        .primary-bg { background-color: #003366; } 
+        .primary-text { color: #003366; }
+        .accent-color { color: #3399ff; }
+        .accent-border { border-color: #3399ff; } 
+        .left-column {
+            width: 35%;
+            padding: 40px 30px;
+            color: white;
+            background-image: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('https://th.bing.com/th/id/OIP.ddptVNtfjeFioeKzGwVc5QHaNK?o=7&cb=ucfimg2rm=3&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #003366; 
+        }
+        .right-column {
+            width: 65%;
+            background: white;
+            padding: 40px; }
+        .section-title {
+            position: relative;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            transition: all 0.3s ease-in-out; }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: -40px;
+            height: 3px;
+            background-color: #3399ff;
+            border-radius: 2px; }
+        .left-column h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 5px;
+            transition: all 0.3s ease-in-out; 
+            cursor: pointer; }
+        .right-column h2 {
+            font-size: 18px;
+            font-weight: 600; }
+        .left-column h2:hover {
+            color: #3399ff;
+            transform: translateX(5px); }
+        .section-title:hover {
+            color: #3399ff;
+            transform: scale(1.02); }
+        .skill-bar-container {
+            background: rgba(255, 255, 255, 0.2);
+            height: 6px;
+            border-radius: 3px; }
+        .skill-level {
+            height: 6px;
+            background: #3399ff;
+            border-radius: 3px; }
+        .work-item-border {
+            border-color: #94a3b8;
+            border-radius: 0 5px 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="cv-container rounded-xl overflow-hidden">
+<div class="left-column">     
+            <div class="text-center mb-6">
+                <img src="https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/565164236_1486248792494805_1165598398921706354_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=fVUo1qeatJgQ7kNvwHlhOkA&_nc_oc=Adl4FR4gq7k6d8HHMEwnZq07OxWx0UCLRwoQCRGGb0zpL42zfq0WVcFeG-rP8PIjnL7XyUadJsPs7nYFSq0iMR9i&_nc_zt=23&_nc_ht=scontent.fsgn2-4.fna&_nc_gid=zjLSG1BQwNETgdkAZtzD4g&oh=00_AfiS0AuV8VzdNWHh6dI1h7d-GoMyDia6CaGs88oQ1vLxAw&oe=691D1326" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/120x120/003366/ffffff?text=AVATAR';"
+                     alt="Profile Picture" 
+                     class="w-[120px] h-[120px] object-cover rounded-md mx-auto border-4 border-[#3399ff] shadow-lg">
+            </div>
+            <section class="contact">
+                <h2>📞 liên hệ</h2>
+                <div class="text-sm space-y-2 mt-3">
+                    <p class="flex items-center"><span class="mr-2 text-xl">📍</span> P.Long Bình,TP.HCM</p>
+                    <p class="flex items-center"><span class="mr-2 text-xl">☎️</span> 0921 856 997</p>
+                    <p class="flex items-center"><span class="mr-2 text-xl">✉️</span> 5101104002@student.hcmue.edu.vn</p>
+                </div>
+            </section>
+            <section class="skills">
+                <h2>🧠 Kĩ năng</h2>
+                <div class="space-y-3 mt-3">
+                    <div class="skill-item">
+                        <p class="text-sm mb-1">giảng dạy Toán Lý Tin theo Logic</p>
+                        <div class="skill-bar-container"><div class="skill-level" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <p class="text-sm mb-1">Lập trình cơ bản C++ và DataBase MySQL</p>
+                        <div class="skill-bar-container"><div class="skill-level" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <p class="text-sm mb-1">Giao tiếp,Thuyết trình đáp ứng tốt</p>
+                        <div class="skill-bar-container"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <p class="text-sm mb-1">Quản lý Dự án và công việc</p>
+                        <div class="skill-bar-container"><div class="skill-level" style="width: 95%;"></div></div>
+                    </div>
+                </div>
+            </section>
+<section class="reference">
+                <h2>🤝 REFERENCE PERSON</h2>
+                <p class="text-sm mt-3">
+                    <strong>Mr. Trung Anh</strong> - HCMUE<br>
+                    💼 Su Pham HCM<br>
+                    ☎️ 0921 841 229
+                    <br><br>
+                </p>
+                <div class="text-sm">
+                    <span style="font-weight: 600;">🌐 Mạng Xã Hội:</span><br>
+                    <a href="https://www.facebook.com/trugahN7" class="text-white hover:accent-color transition duration-300 mr-4 text-sm">
+                        <span class="text-base">📘</span> Facebook
+                    </a>
+                    <br>
+                    <a href="https://youtube.com/@tr_anh1612" class="text-white hover:accent-color transition duration-300 text-sm">
+                        <span class="text-base">▶️</span> Youtube
+                    </a>
+                </div>
+            </section>
+        </div>
+<div class="right-column">
+            <header class="mb-8">
+                <h1 class="text-5xl font-extrabold primary-text">NGUYỄN TRUNG ANH</h1>
+                <h3 class="text-xl mt-1 accent-color font-light">MATHEMATICS & COMPUTER SCIENCE TEACHER</h3>
+                </header>
+            <section class="about mb-8">
+                <div class="section-title primary-text">👤 ABOUT ME</div>
+                <p class="text-sm text-gray-700 leading-relaxed" id="aboutMeContent">Tôi là một giáo viên tận tâm với chuyên môn về Toán học và Khoa học Máy tính. Tôi có kinh nghiệm trong việc phát triển các chương trình giảng dạy đổi mới, tập trung vào tư duy phản biện và ứng dụng thực tế. Mục tiêu của tôi là truyền cảm hứng cho học sinh khám phá thế giới số và giải quyết các vấn đề phức tạp thông qua Toán học và Kỹ thuật. Tôi cam kết sử dụng các phương pháp giảng dạy hiện đại để tạo ra một môi trường học tập kích thích và hỗ trợ.</p>
+            </section>
+            <section class="experience mb-8">
+                <div class="section-title primary-text">💼 WORK EXPERIENCE</div>
+                <div class="item mb-6 border-l-4 work-item-border pl-4" id="exp1">
+                    <p class="text-base font-semibold primary-text">CHUYÊN GIA PHÁT TRIỂN NỘI DUNG E-LEARNING (Toán Tin)</p>
+                    <p class="text-xs text-gray-500 mb-2">Ongoing</p>
+                    <p class="text-sm text-gray-700 leading-relaxed">Phát triển các khóa học Toán và Tin học trực tuyến, từ cấp độ cơ bản đến nâng cao. Thiết kế các mô-đun học tập tương tác, bao gồm video bài giảng, bài tập lập trình tự động chấm điểm và mô phỏng Toán học. Đảm bảo chất lượng nội dung đạt tiêu chuẩn sư phạm và kỹ thuật cao nhất.</p>
+                </div>
+                
+                <div class="item mb-6 border-l-4 work-item-border pl-4" id="exp2">
+                    <p class="text-base font-semibold primary-text">GIÁO VIÊN TOÁN HỌC</p>
+                    <p class="text-sm text-gray-700 leading-relaxed">Giảng dạy chương trình Toán học phổ thông (Đại số và Hình học). Áp dụng các phương pháp dạy học STEM/STEAM để kết nối lý thuyết với các vấn đề thực tế. Tổ chức các buổi workshop giải quyết vấn đề bằng thuật toán cơ bản.</p>
+                </div>
+                
+                <div class="item mb-6 border-l-4 work-item-border pl-4" id="exp3">
+                    <p class="text-base font-semibold primary-text">GIA SƯ TIN HỌC VÀ LẬP TRÌNH</p>
+                    <p class="text-sm text-gray-700 leading-relaxed">Cung cấp các buổi gia sư cá nhân hóa về Tin học, tập trung vào tư duy lập trình và giải quyết vấn đề bằng Python. Hỗ trợ học sinh tham gia các kỳ thi học sinh giỏi Tin học cấp thành phố và quốc gia.</p>
+                </div>
+            </section>
+            <section class="education">
+                <div class="section-title primary-text">🎓 EDUCATION</div>
+                <div class="item mb-4">
+                    <p class="text-base font-semibold primary-text">Học tập tại Đại học Sư Phạm Hồ Chí Minh</p>
+                    <p class="text-sm text-gray-600">2025-2030</p>
+                </div>
+                <div class="item">
+                    <p class="text-base font-semibold primary-text">Học tập tại trường THPT Nguyễn Huệ Q9</p>
+                    <p class="text-sm text-gray-600">2022-2025</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
