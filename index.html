@@ -3,40 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chính</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
+    <title>Trang Bài Tập - Nguyễn Trung Anh</title>
+<style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #f8f8f8;
+            --text-color: #333333;
+            --accent-color: #007bff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            background-color: #f2f2f2;
-            padding-top: 100px;
+            background-color: var(--secondary-color);
+            padding: 50px 20px;
+            color: var(--text-color);
+            margin: 0;
+            position: relative; 
+            min-height: 100vh;
+            
+            /* Tăng padding-top của body lên một chút để tạo thêm không gian phía trên */
+            padding-top: 70px; 
         }
-        h1{
-            color: #333;
+
+        .info-box {
+            position: absolute;
+            top: 20px; /* Vẫn giữ cách lề trên 20px */
+            left: 20px;
+            background-color: #e6f7ff;
+            color: var(--primary-color);
+            padding: 8px 12px; /* Giảm padding một chút cho hộp box nhỏ gọn hơn */
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 0.85em; /* Giảm font size một chút */
+            font-weight: 600;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            /* Đảm bảo info-box nằm trên mọi thứ */
+            z-index: 10; 
         }
-        a{
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            /* Tăng margin-top để đảm bảo container được đẩy xuống dưới info-box */
+            margin-top: 20px; 
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        /* Các style khác giữ nguyên... */
+        /* ... */
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
             display: inline-block;
-            margin: 20px;
+        }
+
+        h3 {
+            color: #555555;
+            font-weight: 400;
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+
+        .link-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        a {
+            max-width: 400px; 
+            width: 100%;
             padding: 15px 25px;
-            background-color: #007bff;
+            background-color: var(--primary-color);
             color: white;
             text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
+            border-radius: 5px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
         a:hover {
-            background-color: #0056b3;
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+    </style>
     </style>
 </head>
 <body>
-    <h1>Chào mừng thầy đã đến với trang bài tập của Nguyễn Trung Anh</h1>
-    <h3>Bài tập cá nhân em có như sau :</h3>
-<a href="cv cá nhân.html">Xem CV cá nhân</a>
-<a href="ho-nhan-tao.html">Xem hồ nhân tạo</a>
+    <div class="info-box">
+        Trang chính index.html
+    </div>
+    
+    <div class="container">
+        <h1>BÀI TẬP NỘP CÁ NHÂN</h1>
+        <h3>Em chào Thầy đã ghé thăm trang bài tập của sinh viên Nguyễn Trung Anh</h3>
+        <div class="link-section">
+            <a href="ho-nhan-tao.html">🫧🐟 XEM HỒ CÁ NHÂN TẠO</a>
+            <a href="cv cá nhân.html">📑 XEM CV CÁ NHÂN</a>
+        </div>
+    </div>
 </body>
-
 </html>
-
-
-
